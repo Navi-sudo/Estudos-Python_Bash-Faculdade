@@ -5,8 +5,6 @@ def perguntas():
     '<E> Para Excluir um usuário\n' +
     '<L> Para Listar um usuário:\n').upper()
 
-perguntas()
-
 
 def inserir(dicionario):
     dicionario[input('Digite o login: ').upper()] = [input('Digite o nome: ').upper(),
@@ -16,6 +14,6 @@ def inserir(dicionario):
     salvar(dicionario)
 
 def salvar(dicionario):
-    with open ('bd.txt', 'a') as arquivo:
+    with open ('aula10.txt', 'a') as arquivo:
         for chave, valor in dicionario.items():
-            arquivo.write(chave + ':' + valor)
+            arquivo.write(chave + ':' + str(valor))

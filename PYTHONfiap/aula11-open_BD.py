@@ -1,5 +1,5 @@
 basedados = []
-with open('iris.data', 'r') as arquivo:
+with open('iris-open_BD.data', 'r') as arquivo:
     for registro in arquivo.readlines():
         basedados.append(registro.split(','))
 print(basedados)
